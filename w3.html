@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script  src="js/bootstrap.js"></script>
+  <script  src="js/bootstrap.min.js"></script>
+  <style>
+    .carousel-inner > .item > img,
+    .corousel-inner > .item > a > img{
+      width: 80%;
+      margin: auto;
+      height: 350px;
+    }
+
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="images/img_chania.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img_chania2.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/img_flower.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img_flower2.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+  
+<div class="container">
+
+   <div class="navbar navbar-inverse ">
+     <div class="container-fluid">
+
+       <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mynavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+         <a class="navbar-brand" href="#">Bootstrap</a>
+       </div>
+
+       <div class="collapse navbar-collapse" id="mynavbar">
+       <ul class="nav navbar-nav navbar-right">
+         <li><a href="#">Page1</a></li>
+         <li><a href="#">Page2</a></li>
+         <li><a href="#">Page3</a></li>
+         <li><a href="#">Page4</a></li>
+       </ul>
+       </div>
+
+     </div>
+   </div>
+
+  <form class="form-horizontal">
+      
+      <div class="form-group">
+        <label class="control-label col-sm-4 col-xs-4" for="email">Email : </label>
+        <div class="col-sm-4 col-xs-6">
+          <input class="form-control" type="text" placeholder="Email" id="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-4 col-xs-4" for="password">password : </label>
+        <div class="col-sm-4 col-xs-6 ">
+          <input class="form-control" type="password" placeholder="password" id="password">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-4 col-xs-6 col-xs-offset-4">    
+          <button type="submit" class="btn btn-default"> Login </button>
+        </div>
+      </div>
+
+  </form>
+
+
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mymodal" >open modal</button>
+
+     <div class="modal" id="mymodal" >
+       <div class="modal-dialog">
+         
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal"> &times; </button>
+            <h4 class="modal-title">modal header</h4>
+           </div>
+
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+         </div>
+       </div>
+
+     </div> 
+
+  <div class="jumbotron text-center">
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p> 
+  </div>
+  <div class="row">
+  <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="images/lights.jpg" target="_blank">
+          <img src="images/lights.jpg" alt="Pulpit Rock" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="images/nature.jpg" target="_blank">
+          <img src="images/nature.jpg" alt="Moustiers Sainte Marie" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="images/fjords.jpg" target="_blank">
+          <img src="images/fjords.jpg" alt="Cinque Terre" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <div class="dropdown">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
+
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="">Css</a></li>
+        <li><a href="">Bootstrap</a></li>
+        <li><a href="">Javascript</a></li>
+        <li class="divider"></li>
+        <li><a href="">Css</a></li>
+        <li><a href="">Bootstrap</a></li>
+        <li><a href="">Javascript</a></li>
+      </ul>
+    </div>
+
+
+</div>
+  
+
+</body>
+</html>
